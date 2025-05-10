@@ -11,7 +11,6 @@ This project leverages Generative AI to transform casual, informal user input in
 - [Results](#results)
 - [Future Work](#future-work)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Project Overview
@@ -94,9 +93,6 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 5. Push to the branch (`git push origin feature/your-feature`)
 6. Create a new Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
