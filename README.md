@@ -30,13 +30,13 @@ To run the project locally, follow these steps:
 ### Step 1: Clone the repository
 ```bash
 git clone https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI.git
-cd email-formalizer
+cd Email-Formalizer-using-Generative-AI
 ```
 
 ### Step 2: Set up a Python virtual environment (optional but recommended)
 ```bash
 python -m venv venv
-source venv/bin/activate  # For Windows, use `venv\Scriptsctivate`
+source venv/bin/activate
 ```
 
 ### Step 3: Install the required dependencies
