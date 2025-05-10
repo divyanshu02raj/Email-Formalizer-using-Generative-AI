@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 #Groq API key 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "key-key-key"
 GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
 
 # Streamlit Page Config
