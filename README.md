@@ -29,7 +29,7 @@ To run the project locally, follow these steps:
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/<your-username>/email-formalizer.git
+git clone https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI.git
 cd email-formalizer
 ```
 
