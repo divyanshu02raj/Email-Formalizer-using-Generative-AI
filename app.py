@@ -1,8 +1,13 @@
 import streamlit as st
 import requests
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 #Groq API key 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
 
 # Streamlit Page Config
