@@ -43,7 +43,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Step 4: Run the application
+### Step 4: Set up environment variables
+Create a .env file in the root directory of the project. Add your Groq API Key as follows:
+```bash
+streamlit run app.py
+```
+The .env file is used to securely store your API key and other environment-specific variables.
+
+### Step 5: Run the application
 ```bash
 streamlit run app.py
 ```
@@ -55,6 +62,7 @@ This will launch the Streamlit app in your web browser, where you can interact w
 1. Enter an informal sentence into the text input field on the Streamlit app.
 2. The system will generate a formal email based on the provided input, displaying it below the input field.
 3. You can use the generated email to refine and send as your formal communication.
+4. You can then copy, edit, or send the generated email as your formal communication.
 
 Example:
 - **Input:** "Hey, can you send me the report?"
