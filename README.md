@@ -1,30 +1,50 @@
+# ✉️ Email Formalizer using Generative AI
 
-# Email Formalizer using Generative AI
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-success)](https://streamlit.io/)
+[![GitHub stars](https://img.shields.io/github/stars/divyanshu02raj/Email-Formalizer-using-Generative-AI?style=social)](https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/divyanshu02raj/Email-Formalizer-using-Generative-AI?style=social)](https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/divyanshu02raj/Email-Formalizer-using-Generative-AI)](https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI/issues)
+[![License](https://img.shields.io/github/license/divyanshu02raj/Email-Formalizer-using-Generative-AI)](LICENSE)
 
-This project leverages Generative AI to transform casual, informal user input into polished, professional emails. Using the power of pre-trained language models (LLaMA3 8B via Groq API), the system generates grammatically correct and contextually relevant formal emails.
+Transform casual messages into polished professional emails using AI. Powered by **LLaMA3 8B** via the **Groq API**.
+
+Transform casual messages into polished professional emails using AI. Powered by **LLaMA3 8B** via the **Groq API**.
+
+---
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Key Features](#key-features)
 - [Installation Instructions](#installation-instructions)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Demo](#demo)
 - [Testing](#testing)
 - [Results](#results)
 - [Future Work](#future-work)
 - [Contributing](#contributing)
 - [Acknowledgments](#acknowledgments)
 
+---
+
 ## Project Overview
 
-The **Email Formalizer** system is designed to assist users in converting informal text into professionally structured email messages. The project uses a Generative AI model, specifically the **LLaMA3 8B model**, for text generation and **Streamlit** for the user interface. This system is useful for anyone who needs to communicate formally but struggles with phrasing or structuring sentences appropriately.
+The **Email Formalizer** converts informal text into professional emails automatically. Using **Generative AI**, the system ensures grammatically correct, contextually relevant, and polished output. The app is built with **Streamlit**, providing an intuitive UI for users.
 
-### Key Features:
-- Converts casual user input into a formal, professional email.
-- Powered by the LLaMA3 8B model via the Groq API.
-- User-friendly interface built using Streamlit.
+---
+
+## Key Features
+
+- Transform casual messages into formal professional emails.
+- Supports multiple tones: Professional, Friendly, Concise, Formal, Persuasive, Diplomatic.
+- Copy to clipboard and download generated emails as `.txt`.
+- Maintains conversation history for easy reuse.
+- Powered by **LLaMA3 8B** via Groq API.
+
+---
 
 ## Installation Instructions
-
-To run the project locally, follow these steps:
 
 ### Step 1: Clone the repository
 ```bash
@@ -32,79 +52,150 @@ git clone https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI
 cd Email-Formalizer-using-Generative-AI
 ```
 
-### Step 2: Set up a Python virtual environment (optional but recommended)
+### Step 2: Set up a Python Virtual Environment (Recommended)
+
 ```bash
 python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS/Linux
 source venv/bin/activate
 ```
 
-### Step 3: Install the required dependencies
+### Step 3: Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Set up environment variables
-Create a .env file in the root directory of the project. Add your Groq API Key as follows:
+### Step 4: Configure Environment Variables
+
+Create a `.env` file in the project root and add your Groq API key:
+
+```env
+GROQ_API_KEY=your_api_key_here
+```
+
+### Step 5: Run the Application
+
 ```bash
 streamlit run app.py
 ```
-The .env file is used to securely store your API key and other environment-specific variables.
 
-### Step 5: Run the application
-```bash
-streamlit run app.py
-```
+The app will launch in your default web browser.
 
-This will launch the Streamlit app in your web browser, where you can interact with the email formalizer.
+---
 
 ## Usage
 
-1. Enter an informal sentence into the text input field on the Streamlit app.
-2. The system will generate a formal email based on the provided input, displaying it below the input field.
-3. You can use the generated email to refine and send as your formal communication.
-4. You can then copy, edit, or send the generated email as your formal communication.
+1. Enter an informal sentence in the text input field. 
+2. Choose the desired tone.
+3. Click ✨ Formalize Email to generate a professional email.
+4. Copy or download the generated email.
+5. Review your recent conversation history for previous messages.
 
-Example:
-- **Input:** "Hey, can you send me the report?"
-- **Output:** "Dear [Name], I hope you are well. Could you kindly send me the report at your earliest convenience?"
+**Example:**
+
+* **Input:**
+  `"Hey, can you send me the report?"`
+* **Output:**
+  `"Dear [Name], I hope you are well. Could you kindly send me the report at your earliest convenience?"`
+
+---
+
+## Screenshots
+
+1. **App Start Screen**  
+   ![App Start Screen](screenshots/1_app_start.png)
+
+2. **Entering a Casual Message**  
+   Casual message: `"I can't come to the office. I have Malaria"`  
+   ![Input Casual Message](screenshots/2_input_message.png)
+
+3. **Email Copied Alert**  
+   ![Email Copied](screenshots/3_copied_alert.png)
+
+4. **Clipboard Content**  
+   ![Clipboard Content](screenshots/4_clipboard.png)
+
+5. **Downloading Email as TXT**  
+   ![Downloading Email](screenshots/5_download.png)
+
+6. **TXT File Content**  
+   ![TXT File](screenshots/6_txt_file.png)
+
+7. **Second Casual Message & Generated Email**  
+   Casual message: `"I can't come to the school. I am going on a family trip."`  
+   ![Second Email Generated](screenshots/7_second_email.png)
+
+8. **Previous Malaria Message Loaded from History**  
+   ![Previous Email from History](screenshots/8_history_email.png)
+
+---
+
+## Demo
+
+- **Live Streamlit Demo:** [Add your demo link here](https://email-formalizer-using-generative-ai.onrender.com/)  
+- **Video Demo (Optional):** [Add video link here](https://www.youtube.com/watch?v=t7h1GEdLVbk)
+
+---
 
 ## Testing
 
-The system was tested across multiple scenarios to ensure its robustness and accuracy. The testing phase included:
-- **Unit Testing:** Testing individual components for functionality.
-- **Integration Testing:** Ensuring smooth interaction between the user input and model.
-- **User Testing:** Collecting feedback from test users regarding the interface and output quality.
-- **Performance Testing:** Evaluating the system’s response time with various input sizes.
+The system has been tested extensively:
+
+* **Unit Testing:** Individual components verified for correctness.
+* **Integration Testing:** Smooth interaction between input, AI model, and output.
+* **User Testing:** Collected feedback on UI/UX and output quality.
+* **Performance Testing:** Evaluated response time for different input lengths.
+
+---
 
 ## Results
 
-- **Accuracy:** The system successfully generated contextually relevant and grammatically correct formal emails.
-- **Response Time:** The application performed optimally, providing quick responses.
-- **Edge Cases:** The model handled incomplete or nonsensical inputs by returning plausible formal responses (e.g., "Could you please clarify your request?").
+* **Accuracy:** Generates grammatically correct and contextually relevant emails.
+* **Response Time:** Fast and responsive even for long inputs.
+* **Edge Cases:** Handles incomplete or unclear inputs gracefully, e.g., prompting clarification.
+
+---
 
 ## Future Work
 
-- **Model Fine-tuning:** Fine-tuning the model on professional email datasets to improve context-specific responses.
-- **Real-time Collaboration Feature:** Enabling multiple users to collaborate on email generation.
-- **User Feedback Loop:** Allowing users to provide feedback on generated emails to improve system performance.
-- **Multi-Language Support:** Supporting multiple languages to cater to a global audience.
-- **Contextual Enhancements:** Allowing the system to handle more complex email dialogues.
+* Fine-tune the AI model on professional email datasets for higher accuracy.
+* Implement real-time collaboration features for team use.
+* Introduce user feedback mechanism for iterative improvements.
+* Add multi-language support for global users.
+* Enhance handling of complex email threads and multi-step communications.
+
+---
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request. Please follow the standard GitHub flow for contributing.
+Contributions are welcome! Follow these steps:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -am 'Add new feature'`)
-5. Push to the branch (`git push origin feature/your-feature`)
-6. Create a new Pull Request
+1. Fork the repository.
+2. Create a feature branch:
 
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Make your changes and commit:
+
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push your branch:
+
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Submit a pull request for review.
+
+---
 
 ## Acknowledgments
 
-- **LLaMA3 8B Model:** For generating contextually relevant and grammatically correct formal emails.
-- **Groq API:** For providing the infrastructure to run the LLaMA3 model.
-- **Streamlit:** For enabling the user-friendly interface to interact with the model.
-- Special thanks to the open-source community for their contributions to AI and NLP development.
+* **LLaMA3 8B Model** – Generates high-quality, professional emails.
+* **Groq API** – Provides infrastructure to run LLaMA3.
+* **Streamlit** – Powers the user-friendly interface.
+* Open-source contributors for AI and NLP research and resources.
