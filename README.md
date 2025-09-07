@@ -9,7 +9,6 @@
 
 Transform casual messages into polished professional emails using AI. Powered by **LLaMA3 8B** via the **Groq API**.
 
-Transform casual messages into polished professional emails using AI. Powered by **LLaMA3 8B** via the **Groq API**.
 
 ---
 
@@ -137,6 +136,8 @@ The app will launch in your default web browser.
 
 - **Live Streamlit Demo:** [Add your demo link here](https://email-formalizer-using-generative-ai.onrender.com/)  
 - **Video Demo (Optional):** [Add video link here](https://www.youtube.com/watch?v=t7h1GEdLVbk)
+- **Connect on LinkedIn:** [Divyanshu Raj](https://www.linkedin.com/in/div02raj/)
+
 
 ---
 
