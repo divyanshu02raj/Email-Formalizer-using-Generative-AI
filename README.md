@@ -134,9 +134,9 @@ The app will launch in your default web browser.
 
 ## Demo
 
-- **Live Streamlit Demo:** [Add your demo link here](https://email-formalizer-using-generative-ai.onrender.com/)  
-- **Video Demo (Optional):** [Add video link here](https://www.youtube.com/watch?v=t7h1GEdLVbk)
-- **Connect on LinkedIn:** [Divyanshu Raj](https://www.linkedin.com/in/div02raj/)
+- **Live Streamlit Demo:** https://email-formalizer-using-generative-ai.onrender.com
+- **Video Demo (Optional):** https://www.youtube.com/watch?v=t7h1GEdLVbk
+- **Connect on LinkedIn:** https://www.linkedin.com/in/div02raj
 
 
 ---

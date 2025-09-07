@@ -42,6 +42,37 @@ STYLES = """
 .history-item{background:white;border-radius:8px;padding:1rem;margin-bottom:1rem;border-left:4px solid #6366f1;transition:0.2s;}
 .history-item:hover{box-shadow:0 6px 20px rgba(0,0,0,0.05);}
 .tone-badge{background:#6366f1;color:white;padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;}
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Add this to ensure it spans the full width */
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+ /* Add a background to prevent content from showing through */
+    z-index: 100; /* Ensure it's on top of other elements */
+}
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+    .content-card, .email-preview, .history-item {
+        background: #1e1e1e; /* Dark grey background for cards */
+        color: #f0f0f0; /* White text for cards */
+    }
+    .output-container {
+        background: #2b2b2b; /* Slightly different dark grey for contrast */
+        border: 1px solid #3d3d3d;
+    }
+    .history-item {
+        border-left: 4px solid #8e8e8e;
+    }
+        .fixed-footer {
+        background: #1e1e1e; /* Dark background for the footer */
+        color: #a0a0a0; /* Lighter text color */
+        border-top: 1px solid #3d3d3d; /* Darker border */
+    }
+}
 </style>
 """
 
@@ -131,7 +162,7 @@ def render_header():
     st.markdown(f"<div class='main-header'><h1>{APP_TITLE}</h1><p>{APP_SUB}</p></div>", unsafe_allow_html=True)
 
 def render_main_interface():
-    st.markdown("<div class='content-card'>", unsafe_allow_html=True)
+
     user_text = st.text_area("Enter your casual message", value=st.session_state.get("input_text",""), height=150)
     if user_text:
         val = validate_input(user_text)
@@ -161,13 +192,9 @@ def process_formalization(user_text, tone):
     save_history(user_text, formal, tone)
 
 def render_output():
-    formal = st.session_state.get("formal_email","")
+    formal = st.session_state.get("formal_email", "")
     if formal:
-        st.markdown(
-            "<div class='content-card'><div class='output-container'><div class='email-preview'>"
-            + formal +
-            "</div></div></div>", unsafe_allow_html=True
-        )
+        st.markdown(formal, unsafe_allow_html=True)
         col1, col2 = st.columns(2)
         with col1:
             if st.button("📋 Copy"):
@@ -181,7 +208,7 @@ def render_history():
     if not history:
         return
 
-    st.markdown("<div class='content-card'><h4>📚 Recent Conversions</h4></div>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center;'>📚 Recent Conversions</h4>", unsafe_allow_html=True)
 
     left_col, right_col = st.columns([1, 2])
 
@@ -203,7 +230,7 @@ def render_history():
             download_file(selected["formal"], "formal_email.txt", key=f"download_selected_{selected['id']}")
 
 def render_footer():
-    st.markdown("<div style='text-align:center;padding:2rem;color:#64748b;border-top:1px solid #e2e8f0;'>Made with ❤️ using Streamlit & AI</div>", unsafe_allow_html=True)
+    st.markdown("<div class='fixed-footer'>Made with ❤️ using Streamlit & AI</div>", unsafe_allow_html=True)
 
 # ---- Main ----
 def main():
