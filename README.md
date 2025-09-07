@@ -138,7 +138,6 @@ The app will launch in your default web browser.
 - **Video Demo (Optional):** https://www.youtube.com/watch?v=t7h1GEdLVbk
 - **Connect on LinkedIn:** https://www.linkedin.com/in/div02raj
 
-
 ---
 
 ## Testing
