@@ -229,8 +229,7 @@ def render_history():
             
             download_file(selected["formal"], "formal_email.txt", key=f"download_selected_{selected['id']}")
 
-def render_footer():
-    st.markdown("<div class='fixed-footer'>Made with ❤️ using Streamlit & AI</div>", unsafe_allow_html=True)
+
 
 # ---- Main ----
 def main():
@@ -244,7 +243,7 @@ def main():
     render_main_interface()
     render_output()
     render_history()
-    render_footer()
+
 
 if __name__=="__main__":
     main()
