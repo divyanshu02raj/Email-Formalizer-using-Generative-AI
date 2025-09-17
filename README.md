@@ -1,11 +1,16 @@
 # ✉️ Email Formalizer using Generative AI
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-success)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit)](https://streamlit.io/)
+![LLaMA3](https://img.shields.io/badge/Model-LLaMA3%208B-orange?logo=meta)
+![Groq](https://img.shields.io/badge/API-Groq-black?logo=groq)
+![UI](https://img.shields.io/badge/UI-Browser-lightgrey?logo=google-chrome)
+
 [![GitHub stars](https://img.shields.io/github/stars/divyanshu02raj/Email-Formalizer-using-Generative-AI?style=social)](https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/divyanshu02raj/Email-Formalizer-using-Generative-AI?style=social)](https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/divyanshu02raj/Email-Formalizer-using-Generative-AI)](https://github.com/divyanshu02raj/Email-Formalizer-using-Generative-AI/issues)
 [![License](https://img.shields.io/github/license/divyanshu02raj/Email-Formalizer-using-Generative-AI)](LICENSE)
+
 
 Transform casual messages into polished professional emails using AI. Powered by **LLaMA3 8B** via the **Groq API**.
 
@@ -101,34 +106,52 @@ The app will launch in your default web browser.
   `"Dear [Name], I hope you are well. Could you kindly send me the report at your earliest convenience?"`
 
 ---
-
 ## Screenshots
 
-1. **App Start Screen**  
-   ![App Start Screen](screenshots/1_app_start.png)
-
-2. **Entering a Casual Message**  
-   Casual message: `"I can't come to the office. I have Malaria"`  
-   ![Input Casual Message](screenshots/2_input_message.png)
-
-3. **Email Copied Alert**  
-   ![Email Copied](screenshots/3_copied_alert.png)
-
-4. **Clipboard Content**  
-   ![Clipboard Content](screenshots/4_clipboard.png)
-
-5. **Downloading Email as TXT**  
-   ![Downloading Email](screenshots/5_download.png)
-
-6. **TXT File Content**  
-   ![TXT File](screenshots/6_txt_file.png)
-
-7. **Second Casual Message & Generated Email**  
-   Casual message: `"I can't come to the school. I am going on a family trip."`  
-   ![Second Email Generated](screenshots/7_second_email.png)
-
-8. **Previous Malaria Message Loaded from History**  
-   ![Previous Email from History](screenshots/8_history_email.png)
+<table>
+  <tr>
+    <td align="center">
+      <b>1. App Start Screen</b><br/>
+      <img src="screenshots/1_app_start.png" width="400"/>
+    </td>
+    <td align="center">
+      <b>2. Entering a Casual Message</b><br/>
+      <i>Casual message: "I can't come to the office. I have Malaria"</i><br/>
+      <img src="screenshots/2_input_message.png" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>3. Email Copied Alert</b><br/>
+      <img src="screenshots/3_copied_alert.png" width="400"/>
+    </td>
+    <td align="center">
+      <b>4. Clipboard Content</b><br/>
+      <img src="screenshots/4_clipboard.png" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>5. Downloading Email as TXT</b><br/>
+      <img src="screenshots/5_download.png" width="400"/>
+    </td>
+    <td align="center">
+      <b>6. TXT File Content</b><br/>
+      <img src="screenshots/6_txt_file.png" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>7. Second Casual Message & Generated Email</b><br/>
+      <i>Casual message: "I can't come to the school. I am going on a family trip."</i><br/>
+      <img src="screenshots/7_second_email.png" width="400"/>
+    </td>
+    <td align="center">
+      <b>8. Previous Malaria Message Loaded from History</b><br/>
+      <img src="screenshots/8_history_email.png" width="400"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
